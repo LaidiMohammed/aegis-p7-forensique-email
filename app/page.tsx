@@ -1,4 +1,4 @@
-import ForensicBoard from "@/components/ForensicBoard";
+import Console from "@/components/Console";
 import Reveal from "@/components/Reveal";
 
 const STEPS = [
@@ -27,7 +27,7 @@ export default function Page() {
           <Reveal delay={210}><div className="mt-8 flex flex-wrap gap-3"><a href="#board" className="rounded bg-amberx px-6 py-3 font-mono text-xs font-bold uppercase tracking-widest text-slate9 hover:bg-white">Analyser ↓</a><a href="#pipeline" className="rounded border border-edge px-6 py-3 font-mono text-xs uppercase tracking-widest text-slate-300 hover:border-amberx">Le pipeline</a></div></Reveal>
           <Reveal delay={280}><div className="mt-10 grid grid-cols-4 gap-4 border-t border-edge pt-6">{[["04","étapes"],["09","IOCs"],["1","rapport PDF"],["00","GPU"]].map(([n,l])=><div key={l}><div className="font-display text-2xl font-extrabold text-white">{n}</div><div className="coord text-slate-500">{l}</div></div>)}</div></Reveal>
         </div>
-        <Reveal delay={120}><ForensicBoard /></Reveal>
+        <Reveal delay={120}><Console /></Reveal>
       </section>
 
       <section id="pipeline" className="mx-auto max-w-7xl px-5 py-14">
