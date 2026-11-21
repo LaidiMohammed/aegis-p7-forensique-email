@@ -4,7 +4,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: { slate9: "#0b1320", board: "#111c2e", amberx: "#f5a524", teal: "#4fd1c5", edge: "#23344f" },
-      fontFamily: { mono: ["IBM Plex Mono", "Consolas", "monospace"], display: ["Manrope", "Arial", "sans-serif"] },
+      fontFamily: { mono: ["var(--font-mono)", "Consolas", "monospace"], display: ["var(--font-sans)", "Arial", "sans-serif"] },
     },
   },
   plugins: [],
