@@ -6,7 +6,7 @@ export const runtime = "nodejs";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const out = parseEmail(body);
+    const out = parseEmail(body.eml);
     return NextResponse.json(out);
   } catch {
     return NextResponse.json({ error: "Requête invalide" }, { status: 400 });
